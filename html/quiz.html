@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    HTML bootstrap 5, css and js 
+    
+    Interactive Quiz
+    Author: Kaung Ye Myint Mo 
+
+    Filename: quiz.html
+   -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/author-logo.png">
+
+    <title>Sustainability Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/ca2.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+  <style> 
+body {
+    background-image: url(../images/leaves.webp);
+    /* credits: https://www.toptal.com/designers/subtlepatterns/ */
+}
+
+.customstyle1 {
+    background-color: white;
+}
+
+
+@media (min-width: 769px) {
+    .customstyle1 {
+        margin:80px;
+        padding: 80px 100px 80px 100px;
+    }
+    }
+
+</style>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- topbar -->
+    <div class="container-fluid">
+        <div class="row" style="background-image: url(../images/pinksky.png)" >
+             <!-- credits:https://freepik.com  -->
+
+            <div class="col-sm-2"></div>
+            <figure class="text-center" style="padding:50px">
+                <blockquote class="blockquote"  data-aos="fade-right" data-aos-delay="300">
+                  <p>The greatest threat to our planet is the belief that someone else will save it.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  <cite title="Source Title">Robert Swan</cite>
+                </figcaption>
+              </figure>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    
+<!-- navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark py-0">
+    <div class="container">
+      <a class="navbar-brand" href="draft.html">
+        <img src="..\images\movingearth.gif" alt="Logo" width="50" height="50">
+      </a>
+<!-- credits: https://giphy.com -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars custom-icon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sustainability Matters
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="sp.html">Sustainability by SP</a></li>
+              <li><a class="dropdown-item" href="savetheearth.html">Save the Earth</a></li>
+              <li><a class="dropdown-item" href="whysave.html">Why?</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Forms
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="quiz.html">Sustainability Quiz</a></li>
+              <li><a class="dropdown-item" href="userForm.html">Subscribe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="author.html">The Author</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding:80px 80px 10px 80px;">
+    <h2> Are you sustainable?</h2>
+    <h6 style="padding: 20px;" > Do you think you are sustainable? Do you want to find out how valuable you are to the environment?
+    </h6>
+    <h6 style="padding: 10px 20px 40px 20px;">    Take this quiz and find out! Be fast or time is going to run out.
+    </h6>
+  </div>
+
+<!-- quiz -->
+  <div class="container rounded customsection" style="background-color: pink; padding: 20px; margin-bottom: 40px">
+    <section class="rounded customstyle1">
+    <h1>SUSTAINABILITY QUIZ</h1>
+    <div id="start-page">
+      <button class="btn btn-primary" id="start-btn">Start Quiz</button>
+    </div>
+    <div id="timer" class="d-none">Time remaining: <span id="timer-value">15:00</span></div>
+    <div id="quiz-container" class="d-none">
+      <div id="question"></div>
+      <div class="btn-group-vertical mt-4" id="answers">
+        <!-- Answers will be inserted here dynamically -->
+      </div>
+      <div class="mt-4"> <!-- This new div to wrap the Next button -->
+        <button class="btn btn-primary" id="next-btn">Next</button> <!-- The Next button is now inside the new div -->
+      </div>
+    </div>
+    <div id="result" class="mt-4 d-none">
+      <h3>Result</h3>
+      <p id="score">Your score: <span id="score-value">0</span>/11</p>
+      <p id="result-message"></p>
+    </div>
+</section>
+  </div>
+
+<!-- footer -->
+  <footer class="mt-auto text-light py-4">
+    <div class="container-fluid">
+        <div class="row bg-dark " style="margin-bottom:10px">
+            <div class="col-md-5">
+                <p>National Environment Agency</p>
+                <ul>
+                <li><a href=tel:62255632> Call: (+65) 6225-5632</a></li>
+                <li><a href=https://www.nea.gov.sg> Website: Click here</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-3">
+                <p>Credits </p> 
+                <ul>
+                <li><a href=https://stock.adobe.com> Adobe Stock Images</a></li>
+                <li><a href=http://unsplash.com> Unsplash</a></li>
+                <li><a href=https://pixabay.com> Pixabay </a></li>
+            </ul>
+            </div>
+</div>
+</div>
+            <div class="container-fluid">
+                <div class="row bg-dark ">
+            <div class="col-md-6 mx-auto text-center">
+                <p>&copy; 2023 Kaung Ye Myint Mo . All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  // Initialize AOS
+  AOS.init();
+</script>
+</body>
+
+</html>

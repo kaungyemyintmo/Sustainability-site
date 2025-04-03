@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <!--
+    HTML bootstrap 5 form, css and js
+    
+    Bootstrap Form
+    Author: Kaung Ye Myint Mo 
+
+    Filename: userForm.html
+   -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/author-logo.png">
+
+    <title>User Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/ca2.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    .customdetails {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .textdetails {
+        padding: 20px;
+    }
+
+    /* Media query for large screens (above 768px width) */
+    @media (min-width: 769px) {
+        .prompts{
+            padding: 0px 100px 0px 100px;
+        } 
+
+        .customsection{
+        margin:20px 100px 20px 100px;
+        padding: 80px 100px 80px 100px;
+        }
+    }
+</style>
+
+<!-- topbar -->
+<body class="d-flex flex-column min-vh-100" style="background-color: black;">
+    <section class="contact"> 
+        <div class="container-fluid py-6">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h1 class="text-info text-center customdetails"  data-aos="fade-right" data-aos-delay="300">HELP US DO BETTER.</h1>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+      </div>
+      </section>
+    
+
+      <!-- navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="draft.html">
+                <img src="..\images\movingearth.gif" alt="Logo" width="50" height="50">
+                 <!-- credits: Giphy https://giphycom  -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars custom-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sustainability Matters
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="sp.html">Sustainability by SP</a></li>
+                      <li><a class="dropdown-item" href="savetheearth.html">Save the Earth</a></li>
+                      <li><a class="dropdown-item" href="whysave.html">Why?</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Forms
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="quiz.html">Sustainability Quiz</a></li>
+                      <li><a class="dropdown-item" href="userForm.html">Subscribe</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="author.html">The Author</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <div class="container2 rounded customsection" style="background-image: url(../images/clouds.png)" data-aos="fade-up" data-aos-delay="500">
+        <!-- credits: Adobe Stock Images https://adobestockimages.com  -->
+        <h4 class="text-info textdetails">User Information</h4> 
+        <h5 class="text-info textdetails">Every information you provide here is entirely confidential and will not be shared with external organizations.
+        You are encouraged to fill up all prompts. </h5>
+</div>
+
+
+<!-- form -->
+<section class="prompts bg-white rounded customsection" data-aos="fade-up" data-aos-delay="700">
+    
+    <section class="prompts bg-dark rounded" data-aos="fade-up" data-aos-delay="700">
+
+    <div class="container">
+
+        <div class="row" style="font-size: 20px; padding-top: 20px">
+            <label for="fullname" class="col-sm-2 col-form-label text-white ">Fullname</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+          </div>
+
+    <div class="row" style="font-size: 20px; padding-top: 20px">
+        <label for="birthdate" class="col-sm-3 col-form-label text-white ">Birthdate</label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Day">
+        </div>
+
+        <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Month">
+
+        </div>
+
+        <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Year">
+
+        </div>
+    </div>
+
+    <h3 class="text-white " style="font-size: 20px; padding-top: 50px">How important is sustainability to you?</h3>
+    <h6 class="text-white">Least to Most</h1>
+    <label for="customRange1" class="form-label">Sustainability Range</label>
+    <input type="range" class="form-range" id="customRange1">
+</div>
+
+
+    <div class="container">
+        <h3 class="text-white " style="font-size: 20px; padding-top: 50px">How often do you read about sustainability matters?</h3>
+        <select class="form-select">
+            <option selected>Select</option>
+            <option value="1">everyday</option>
+            <option value="2">3-4 times a week</option>
+            <option value="3">once a week</option>
+            <option value="4">rarely</option>
+            <option value="5">almost never</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <h3 class="text-white " style="font-size: 20px; padding-top: 50px">Do you know about the 'Go Green SG' movement?</h3>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" >
+            <label class="form-check-label" for="GoGreenSG">
+                <p class="text-white">Yes</p>
+            </label>
+        </div>
+        <div class="form-chec form-check-inline">
+            <input class="form-check-input" type="checkbox" value=""S>
+            <label class="form-check-label" for="GoGreenSG">
+                <p class="text-white">No</p>
+            </label>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <h3 class="text-white" style="font-size: 20px; padding-top: 50px">Would you like to subscribe to our newsletter?</h3>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" >
+            <label class="form-check-label" for="GoGreenSG">
+                <p class="text-white">Yes</p>
+            </label>
+        </div>
+        <div class="form-chec form-check-inline">
+            <input class="form-check-input" type="checkbox" value=""S>
+            <label class="form-check-label" for="GoGreenSG">
+                <p class="text-white">No</p>
+            </label>
+        </div>
+    </div> -->
+    <div class="container">
+    <label for="employment" class="form-label text-white">What is your employment status?</label>
+    <input class="form-control" list="employmentlist" placeholder="Type to search...">
+    <datalist id="employmentlist">
+      <option value="Full-time Employment">
+      <option value="Part-time Employment">
+      <option value="Looking for Employment">
+      <option value="Student">
+      <option value="Retired">
+    </datalist>
+    </div>
+
+    <div class="container">
+        <h2 class="text-white" style="font-size: 20px; padding-top: 50px; 
+        font-weight: bold; text-decoration: underline;">Personal Particulars</h2>
+        <form action="#" class="was-validated">
+            <div class="form-group m-3">
+                <label for="email">Email Address:</label>
+                <input type="text" class="form-control" placeholder="Email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group m-3">
+                <label for="number">Mobile number:</label>
+                <input type="number" class="form-control" placeholder="Mobile number" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                <button type="submit" class="btn btn-primary mb-5">Submit</button>
+        </form>
+    </div>
+
+    </section>
+    
+</section>
+
+<!-- footer -->
+<footer class="mt-auto text-light py-4">
+    <div class="container-fluid">
+        <div class="row bg-dark " style="margin-bottom:10px">
+            <div class="col-md-5">
+                <p>National Environment Agency</p>
+                <ul>
+                <li><a href=tel:62255632> Call: (+65) 6225-5632</a></li>
+                <li><a href=https://www.nea.gov.sg> Website: Click here</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-3">
+                <p>Credits </p> 
+                <ul>
+                <li><a href=https://stock.adobe.com> Adobe Stock Images</a></li>
+                <li><a href=http://unsplash.com> Unsplash</a></li>
+                <li><a href=https://pixabay.com> Pixabay </a></li>
+            </ul>
+            </div>
+</div>
+</div>
+            <div class="container-fluid">
+                <div class="row bg-dark ">
+            <div class="col-md-6 mx-auto text-center">
+                <p>&copy; 2023 Kaung Ye Myint Mo . All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="..\js\draft.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+
+</html>
+</html>

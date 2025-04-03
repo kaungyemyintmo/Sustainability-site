@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <!--
+    HTML bootstrap 5 and css
+    
+    Home Page
+    Author: Kaung Ye Myint Mo 
+
+    Filename: index.html
+   -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../images/author-logo.png">
+  <title>Home Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="../css/ca2.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(../images/phoenixnebula.jpg); 
+      /* credits:https://freepik.com  */
+   
+    }
+
+    a {
+      color: var(--bs-blue);
+    }
+
+    .figure-caption {
+      text-align: center; /* Center the caption text */
+      color:white;
+        font-size: 50px; 
+        font-variant:small-caps;
+        margin: auto;
+        text-shadow: 0px 0px 20px rgb(58, 110, 188), 0px 5px 10px rgb(58, 110, 188);
+    }
+  /* Custom CSS for carousel images */
+    /* Default styles */
+    .carousel-item img {
+      width: 100%;
+    }
+
+    .container img {
+      width: 100%; 
+    }
+    /* Media query for small screens (up to 576px width) */
+    @media (max-width: 576px) {
+      .carousel-item img {
+        width: 80%;
+      }
+
+      .container2 img {
+      width: 100%;
+    }
+    }
+
+    /* Media query for medium screens (between 577px and 768px width) */
+    @media (min-width: 577px) and (max-width: 768px) {
+      .carousel-item img {
+        width: 60%;
+      }
+
+      .container2 img {
+      width: 60%; 
+    }
+    }
+
+    /* Media query for large screens (above 768px width) */
+    @media (min-width: 769px) {
+      .carousel-item img {
+        width: 100%;
+      }
+
+      .container2 img {
+      width: 100%; 
+    }
+    }
+
+    /* breathe animation */
+      @keyframes breathe {
+        0% {
+          transform: scale(0.7);
+        }
+
+        50% {
+          transform: scale(0.8);
+        }
+
+        100% {
+          transform: scale(0.7);
+        }
+      }
+
+      .breathe-animation {
+        animation-name: breathe;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- navbar -->
+  <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="draft.html">
+        <img src="..\images\movingearth.gif" alt="Logo" width="50" height="50">
+      </a>
+         <!-- credits:https://giphy.com  -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars custom-icon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sustainability Matters
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="sp.html">Sustainability by SP</a></li>
+              <li><a class="dropdown-item" href="savetheearth.html">Save the Earth</a></li>
+              <li><a class="dropdown-item" href="whysave.html">Why?</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Forms
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="quiz.html">Sustainability Quiz</a></li>
+              <li><a class="dropdown-item" href="userForm.html">Subscribe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="author.html">The Author</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="2000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..\images\bnwcanva.png" class="d-block w-100" alt="...">
+      </div>
+   <!-- credits:https://canva.com  -->
+      <div class="carousel-item">
+        <img src="..\images\white.png" class="d-block w-100" alt="...">
+      </div>
+         <!-- credits: Kaung Ye Myint Mo  -->
+
+      <div class="carousel-item">
+        <img src="..\images\bnwnature.png" class="d-block w-100" alt="...">
+      </div>
+         <!-- credits:https://canva.com  -->
+
+      <div class="carousel-item">
+        <img src="..\images\black.png" class="d-block w-100" alt="...">
+      </div>
+         <!-- credits: Kaung Ye Myint Mo  -->
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container2">
+    <div class="row">
+      <div class="col"> </div>
+      <div class="col">
+        <div id="myElement" class="animate__animated">
+          <figure class="figure">
+            <img src="..\images\earth.png" class="breathe-animation">
+               <!-- credits:https://unsplash.com  -->
+            <figcaption class="figure-caption">OUR HOME</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <!-- footer -->
+<footer class="mt-auto text-light py-4">
+  <div class="container-fluid">
+      <div class="row bg-dark " style="margin-bottom:10px">
+          <div class="col-md-5">
+              <p>National Environment Agency</p>
+              <ul>
+              <li><a href=tel:62255632> Call: (+65) 6225-5632</a></li>
+              <li><a href=https://www.nea.gov.sg> Website: Click here</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-3">
+              <p>Credits </p> 
+              <ul>
+              <li><a href=https://stock.adobe.com> Adobe Stock Images</a></li>
+              <li><a href=http://unsplash.com> Unsplash</a></li>
+              <li><a href=https://pixabay.com> Pixabay </a></li>
+          </ul>
+          </div>
+</div>
+</div>
+          <div class="container-fluid">
+              <div class="row bg-dark ">
+          <div class="col-md-6 mx-auto text-center">
+              <p>&copy; 2023 Kaung Ye Myint Mo. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

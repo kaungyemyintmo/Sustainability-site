@@ -1,0 +1,33 @@
+@charset "utf-8"; 
+
+/*
+Layout Style Sheet
+
+Author: Kaung Ye Myint Mo 
+Date:   08/05/2023
+
+Filename:ca2.css
+*/
+ 
+
+body {
+  overflow-x: hidden;
+} 
+
+:root {
+  scroll-behavior: smooth;
+  --bs-font-sans-serif: 'Trebuchet MS', Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+}
+
+body {
+  font-family: var (--bs-font-sans-serif);
+}
+
+  
+.navbar .collapse .nav-link {
+color: white
+}
+  
+.custom-icon {
+color: white; 
+}
