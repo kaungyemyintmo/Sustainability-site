@@ -27,7 +27,22 @@ body {
 .navbar .collapse .nav-link {
 color: white
 }
-  
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+#nav-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .custom-icon {
 color: white; 
 }
